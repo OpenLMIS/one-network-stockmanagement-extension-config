@@ -1,0 +1,12 @@
+version: "2"
+services:
+
+  stockmanagement-extension-config:
+    image: openlmis/dev:5.2
+    volumes:
+      - '.:/app'
+      - 'gradlecache:/gradle'
+
+volumes:
+  gradlecache:
+    external: false

@@ -1,0 +1,11 @@
+version: "2"
+services:
+
+  stockmanagement-extension-config:
+    image: openlmis/one-network-stockmanagement-extension-config
+    volumes:
+      - 'stockmanagement-extension:/extensions'
+
+volumes:
+  stockmanagement-extension:
+    external: false
